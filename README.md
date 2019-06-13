@@ -1,6 +1,8 @@
 # snakebyte
 Convert between different byte units
 
+[![Build Status](https://travis-ci.org/Bikossor/snakebyte.svg?branch=develop)](https://travis-ci.org/Bikossor/snakebyte)
+
 ## ***Warning! This module is still in development!***
 
 ## Installing
