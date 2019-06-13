@@ -34,10 +34,10 @@ var snakebyte = (function () {
                 return number;
             }
 
-            var res = number * Math.pow(decimalBase, exponent),
+            var res = Math.round(number * Math.pow(decimalBase, exponent)),
                 fractions = exponent < 0 ? Math.abs(exponent + unitFrom - 1) : 0;
 
-            return Number.parseFloat(res).toFixed(24);
+            return Number.parseFloat(res);
         }
     };
 })();
