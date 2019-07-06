@@ -2,6 +2,12 @@
 Convert between different byte units
 
 [![Build Status](https://travis-ci.org/Bikossor/snakebyte.svg?branch=develop)](https://travis-ci.org/Bikossor/snakebyte)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1a444123eb7c4bdbacd7325a0fe8e5ee)](https://www.codacy.com/app/Bikossor/snakebyte?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Bikossor/snakebyte&amp;utm_campaign=Badge_Grade)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/snakebyte.svg)
+![npm](https://img.shields.io/npm/dm/snakebyte.svg)
+![GitHub issues](https://img.shields.io/github/issues/bikossor/snakebyte.svg)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/bikossor/snakebyte.svg)
+![GitHub](https://img.shields.io/github/license/bikossor/snakebyte.svg)
 
 ## ***Warning! This module is still in development!***
 
