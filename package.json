@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/Bikossor/snakebyte#readme",
   "devDependencies": {
-    "jest": "^24.7.1"
+    "jest": "^24.9.0"
   }
 }
