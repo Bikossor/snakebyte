@@ -141,3 +141,49 @@ describe('Conversion to one unit lower with decimals', () => {
     });
 
 });
+
+describe('Conversion from a fraction down', () => {
+
+    test('Convert 0.001 Megabyte to Kilobyte', () => {
+        expect(
+            sb.convert(0.001, sb.Megabyte, sb.Kilobyte)
+        ).toBe(1);
+    });
+
+    test('Convert 0.000001 Gigabyte to Kilobyte', () => {
+        expect(
+            sb.convert(0.000001, sb.Gigabyte, sb.Kilobyte)
+        ).toBe(1);
+    });
+
+    test('Convert 0.000000001 Terabyte to Kilobyte', () => {
+        expect(
+            sb.convert(0.000000001, sb.Terabyte, sb.Kilobyte)
+        ).toBe(1);
+    });
+
+    test('Convert 0.000000000001 Petabyte to Kilobyte', () => {
+        expect(
+            sb.convert(0.000000000001, sb.Petabyte, sb.Kilobyte)
+        ).toBe(1);
+    });
+
+    test('Convert 0.000000000000001 Exabyte to Kilobyte', () => {
+        expect(
+            sb.convert(0.000000000000001, sb.Exabyte, sb.Kilobyte)
+        ).toBe(1);
+    });
+
+    test('Convert 0.000000000000000001 Zettabyte to Kilobyte', () => {
+        expect(
+            sb.convert(0.000000000000000001, sb.Zettabyte, sb.Kilobyte)
+        ).toBe(1);
+    });
+
+    test('Convert 0.000000000000000000001 Yottabyte to Kilobyte', () => {
+        expect(
+            sb.convert(0.000000000000000000001, sb.Yottabyte, sb.Kilobyte)
+        ).toBe(1);
+    });
+
+});
