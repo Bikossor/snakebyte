@@ -9,7 +9,7 @@ Convert between different byte units
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/bikossor/snakebyte.svg)
 ![GitHub](https://img.shields.io/github/license/bikossor/snakebyte.svg)
 
-## ***Warning! This module is still in development!***
+## ***This module is still in development!***
 
 ## Installing
 ### Node.js environment
