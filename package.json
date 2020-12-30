@@ -4,6 +4,7 @@
   "description": "Convert between different byte units",
   "main": "index.js",
   "scripts": {
+    "build": "tsc -p tsconfig.json",
     "test": "jest"
   },
   "repository": {
