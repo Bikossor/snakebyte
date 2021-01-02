@@ -2,7 +2,8 @@
   "name": "snakebyte",
   "version": "1.0.0",
   "description": "Convert between different byte units",
-  "main": "index.js",
+  "main": "lib/snakebyte.js",
+  "types": "lib/snakebyte.d.ts",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "jest"
