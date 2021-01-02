@@ -22,10 +22,15 @@ Download the latest version of snakebyte [here](https://github.com/Bikossor/snak
 ### Node.js environment
 
 ```javascript
-const snakebyte = require("snakebyte");
+const { snakebyte } = require('snakebyte');
 
-snakebyte.convert(100, snakebyte.Kilobyte, snakebyte.Gigabyte);
-// => 0.0001
+const kilobyteToMegabyte = snakebyte({
+    from: 'Kilobyte', // optional, defaults to "Byte"
+    to: 'Megabyte',
+});
+
+kilobyteToMegabyte(1000);
+// => 1
 ```
 
 ## Contributing
