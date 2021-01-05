@@ -27,6 +27,7 @@ const { snakebyte } = require('snakebyte');
 const kilobyteToMegabyte = snakebyte({
     from: 'Kilobyte', // optional, defaults to "Byte"
     to: 'Megabyte',
+    fractions: 2, // optional, defaults to 3
 });
 
 kilobyteToMegabyte(1000);
