@@ -28,6 +28,7 @@ const mapDecimalUnit: DecimalUnitMap = {
 type snakebyteOptions = {
   from?: DecimalUnit;
   to: DecimalUnit;
+  fractions?: number;
 };
 
 export const snakebyte = (options: snakebyteOptions) => (input: number): number => {
@@ -35,12 +36,18 @@ export const snakebyte = (options: snakebyteOptions) => (input: number): number 
     options.from = "Byte";
   }
 
-  const fromUnit = mapDecimalUnit[options.from],
-    toUnit = mapDecimalUnit[options.to],
-    exponent = fromUnit - toUnit,
-    fractions = exponent < 0
-      ? Math.abs(exponent + fromUnit)
-      : 0;
+  if (!options.fractions) {
+    options.fractions = 3;
+  }
 
-  return parseFloat((input * Math.pow(10, exponent)).toFixed(fractions));
+  const expo = mapDecimalUnit[options.from] - mapDecimalUnit[options.to],
+    expoAbsPow = Math.pow(10, Math.abs(expo));
+
+  return parseFloat(
+    (
+      Math.round(
+        (input * Math.pow(10, expo) + Number.EPSILON) * expoAbsPow
+      ) / expoAbsPow
+    ).toFixed(options.fractions)
+  );
 };

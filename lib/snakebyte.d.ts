@@ -2,6 +2,7 @@ declare type DecimalUnit = "Byte" | "Kilobyte" | "Megabyte" | "Gigabyte" | "Tera
 declare type snakebyteOptions = {
     from?: DecimalUnit;
     to: DecimalUnit;
+    fractions?: number;
 };
 export declare const snakebyte: (options: snakebyteOptions) => (input: number) => number;
 export {};
