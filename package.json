@@ -1,0 +1,31 @@
+{
+  "name": "snakebyte",
+  "version": "2.0.0",
+  "description": "Convert between different byte units",
+  "main": "lib/snakebyte.js",
+  "types": "lib/snakebyte.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bikossor/snakebyte.git"
+  },
+  "keywords": [
+    "bit",
+    "byte",
+    "convert",
+    "converter",
+    "bikossor"
+  ],
+  "author": "André Lichtenthäler",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Bikossor/snakebyte/issues"
+  },
+  "homepage": "https://github.com/Bikossor/snakebyte#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
