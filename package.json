@@ -1,6 +1,6 @@
 {
   "name": "snakebyte",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Convert between different byte units",
   "main": "lib/snakebyte.js",
   "types": "lib/snakebyte.d.ts",
