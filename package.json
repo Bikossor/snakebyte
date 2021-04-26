@@ -5,7 +5,8 @@
   "main": "lib/snakebyte.js",
   "types": "lib/snakebyte.d.ts",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "gulp",
+    "prepare": "gulp",
     "test": "jest"
   },
   "repository": {
