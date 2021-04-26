@@ -1,4 +1,4 @@
-const { snakebyte } = require("../lib/snakebyte");
+import { snakebyte } from "../src/snakebyte";
 
 describe('Conversion between same unit', () => {
 
