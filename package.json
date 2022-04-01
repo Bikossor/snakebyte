@@ -24,7 +24,7 @@
     "bikossor"
   ],
   "author": "André Lichtenthäler",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Bikossor/snakebyte/issues"
   },
