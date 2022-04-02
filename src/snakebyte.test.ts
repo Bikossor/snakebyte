@@ -1,4 +1,4 @@
-import { snakebyte } from "../src/snakebyte";
+import { snakebyte } from "./snakebyte";
 
 describe('Conversion between same unit', () => {
 

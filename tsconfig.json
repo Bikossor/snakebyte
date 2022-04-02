@@ -12,7 +12,7 @@
     "src/**/*.ts",
   ],
   "exclude": [
-    "tests/**/*.ts",
+    "src/**/*.test.ts",
     "lib/",
   ],
 }
