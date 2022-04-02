@@ -7,10 +7,10 @@ Convert between different byte units
 ![GitHub issues](https://img.shields.io/github/issues/bikossor/snakebyte.svg)
 ![GitHub](https://img.shields.io/github/license/bikossor/snakebyte.svg)
 
-## Installing
+## Installation
 ### Node.js environment
 ```
-npm i snakebyte --save
+npm i snakebyte
 ```
 
 ### Browser environment
