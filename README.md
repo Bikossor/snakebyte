@@ -6,7 +6,6 @@ Convert between different byte units
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/snakebyte.svg)
 ![npm](https://img.shields.io/npm/dm/snakebyte.svg)
 ![GitHub issues](https://img.shields.io/github/issues/bikossor/snakebyte.svg)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/bikossor/snakebyte.svg)
 ![GitHub](https://img.shields.io/github/license/bikossor/snakebyte.svg)
 
 ## Installing
