@@ -1,7 +1,7 @@
 # snakebyte
 Convert between different byte units
 
-[![Build Status](https://travis-ci.org/Bikossor/snakebyte.svg?branch=develop)](https://travis-ci.org/Bikossor/snakebyte)
+[![Node.js CI](https://github.com/Bikossor/snakebyte/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/Bikossor/snakebyte/actions/workflows/node.js.yml)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1a444123eb7c4bdbacd7325a0fe8e5ee)](https://www.codacy.com/app/Bikossor/snakebyte?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Bikossor/snakebyte&amp;utm_campaign=Badge_Grade)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/snakebyte.svg)
 ![npm](https://img.shields.io/npm/dm/snakebyte.svg)
