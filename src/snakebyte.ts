@@ -31,23 +31,24 @@ type snakebyteOptions = {
   fractions?: number;
 };
 
-export const snakebyte = (options: snakebyteOptions) => (input: number): number => {
-  if (!options.from) {
-    options.from = "Byte";
-  }
+export const snakebyte =
+  (options: snakebyteOptions) =>
+  (input: number): number => {
+    if (!options.from) {
+      options.from = "Byte";
+    }
 
-  if (!options.fractions) {
-    options.fractions = 3;
-  }
+    if (!options.fractions) {
+      options.fractions = 3;
+    }
 
-  const expo = mapDecimalUnit[options.from] - mapDecimalUnit[options.to],
-    expoAbsPow = Math.pow(10, Math.abs(expo));
+    const expo = mapDecimalUnit[options.from] - mapDecimalUnit[options.to],
+      expoAbsPow = Math.pow(10, Math.abs(expo));
 
-  return parseFloat(
-    (
-      Math.round(
-        (input * Math.pow(10, expo) + Number.EPSILON) * expoAbsPow
-      ) / expoAbsPow
-    ).toFixed(options.fractions)
-  );
-};
+    return parseFloat(
+      (
+        Math.round((input * Math.pow(10, expo) + Number.EPSILON) * expoAbsPow) /
+        expoAbsPow
+      ).toFixed(options.fractions),
+    );
+  };
