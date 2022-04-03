@@ -11,6 +11,8 @@
     "build": "gulp",
     "prepare": "gulp",
     "test": "jest",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write .",
     "semantic-release": "semantic-release"
   },
   "repository": {
