@@ -32,23 +32,15 @@ type snakebyteOptions = {
 };
 
 export const snakebyte =
-  (options: snakebyteOptions) =>
+  ({ to, fractions = 3, from = "Byte" }: snakebyteOptions) =>
   (input: number): number => {
-    if (!options.from) {
-      options.from = "Byte";
-    }
-
-    if (!options.fractions) {
-      options.fractions = 3;
-    }
-
-    const expo = mapDecimalUnit[options.from] - mapDecimalUnit[options.to],
+    const expo = mapDecimalUnit[from] - mapDecimalUnit[to],
       expoAbsPow = Math.pow(10, Math.abs(expo));
 
     return parseFloat(
       (
         Math.round((input * Math.pow(10, expo) + Number.EPSILON) * expoAbsPow) /
         expoAbsPow
-      ).toFixed(options.fractions),
+      ).toFixed(fractions),
     );
   };
