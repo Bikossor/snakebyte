@@ -8,8 +8,8 @@
     "lib/"
   ],
   "scripts": {
-    "build": "gulp",
-    "prepare": "gulp",
+    "build": "node scripts/build.js",
+    "prepare": "node scripts/build.js",
     "test": "jest",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
